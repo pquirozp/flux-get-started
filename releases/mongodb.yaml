@@ -5,7 +5,7 @@ metadata:
   name: mongodb
   namespace: demo
   annotations:
-    fluxcd.io/automated: "true"
+    fluxcd.io/automated: "false"
     fluxcd.io/tag.chart-image: semver:~4.0
 spec:
   releaseName: mongodb
@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: bitnami/mongodb
-      tag: 4.0.20
+      tag: 4.0.15
     usePassword: false
     persistence:
       enabled: false
